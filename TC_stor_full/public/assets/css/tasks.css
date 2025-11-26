@@ -1,0 +1,114 @@
+.tasks-toolbar {
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:15px;
+}
+.btn-primary, .btn-secondary {
+    padding:8px 14px;
+    border-radius:999px;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+}
+.btn-primary {
+    background:linear-gradient(135deg,#38bdf8,#6366f1);
+    color:#e5e7eb;
+}
+.btn-secondary {
+    background:#111827;
+    color:#e5e7eb;
+    border:1px solid #4b5563;
+}
+
+.tasks-table-wrapper {
+    background:rgba(15,23,42,0.7);
+    border-radius:12px;
+    padding:10px;
+}
+.tasks-table {
+    width:100%;
+    border-collapse:collapse;
+    color:#e5e7eb;
+}
+.tasks-table th,
+.tasks-table td {
+    padding:8px;
+    border-bottom:1px solid #1f2937;
+    font-size:13px;
+}
+.tasks-table tr:nth-child(even){
+    background:rgba(15,23,42,0.9);
+}
+
+/* modal */
+.modal-overlay {
+    position:fixed;
+    inset:0;
+    background:rgba(15,23,42,0.8);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:50;
+}
+.modal {
+    width:360px;
+    max-width:95%;
+    background:rgba(15,23,42,0.95);
+    border-radius:16px;
+    padding:18px;
+    box-shadow:0 0 25px rgba(56,189,248,0.5);
+}
+.modal h2 {
+    margin-top:0;
+    color:#e5e7eb;
+}
+.modal label {
+    font-size:13px;
+    color:#cbd5f5;
+    display:block;
+    margin-top:6px;
+    margin-bottom:2px;
+}
+.modal input,
+.modal textarea {
+    width:100%;
+    padding:8px;
+    border-radius:8px;
+    border:1px solid #1f2937;
+    background:#020617;
+    color:#e5e7eb;
+    font-size:13px;
+}
+.modal textarea {
+    resize:vertical;
+}
+.modal input:focus,
+.modal textarea:focus {
+    outline:none;
+    border-color:#38bdf8;
+}
+.modal-actions {
+    display:flex;
+    justify-content:flex-end;
+    gap:8px;
+    margin-top:14px;
+}
+.action-btn {
+    padding:4px 8px;
+    font-size:12px;
+    border-radius:6px;
+    border:none;
+    cursor:pointer;
+}
+.action-assign {
+    background:#3b82f6;
+    color:#f9fafb;
+}
+.action-status {
+    background:#f97316;
+    color:#111827;
+}
+.action-done {
+    background:#22c55e;
+    color:#f9fafb;
+}
